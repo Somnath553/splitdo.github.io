@@ -1,0 +1,15 @@
+<div class='formConatiner'>
+  <div class='formWrapper'>
+      <span class='logo'>Chat</span>
+      <span class = 'title>'>Register</span>
+      <form class='regis'>
+        <input  class='inpt'type='email' placeholder='email' name='email' [(ngModel)]="email"/>
+        <input  class='inpt'type='password' placeholder='password' name='password' [(ngModel)]="password"/>
+          <button class='sigbtn' (click)='login()'>Login</button>
+      </form>
+      <div class="conain">
+        <p id='dntacc' >You donot have an account?  </p><p class='signup' id='dntacc' (click)="signup()"> signup ?</p>
+      </div>
+
+  </div>
+</div>
