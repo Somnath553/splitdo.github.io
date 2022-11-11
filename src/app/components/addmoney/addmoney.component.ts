@@ -19,7 +19,6 @@ export class AddmoneyComponent implements OnInit {
   date:Date;
   dropdown:Boolean=false;
   selectedFriendsarr:friendsadd[]=[]
-  image:any;
   constructor() {
     console.log(this.friendsarr)
    }
@@ -39,6 +38,7 @@ export class AddmoneyComponent implements OnInit {
         description:this.description,
         catagory:this.catagory,
         amount:(this.amount/this.selectedFriendsarr.length),
+        total:this.amount,
         date:this.date
       }
       this.description="";

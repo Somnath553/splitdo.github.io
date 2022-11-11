@@ -7,21 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'splitdo';
-  city:string;
-  constructor()
-  {
-    this.city = 'none';
-    console.log(this.city);
-  }
-  change()
-  {
-    this.city = 'no'
-    console.log(this.city);
-  }
-  onKeydown(event: KeyboardEvent)
-  {
-        this.city=event.key;
-  }
 }
-
-

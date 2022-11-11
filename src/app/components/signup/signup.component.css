@@ -31,7 +31,8 @@
 .title
 {
   color: #5d5b8d;
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: bold;
 
 }
 .inpt
@@ -55,7 +56,6 @@
 }
 #dntacc
 {
-  display: inline;
   color: #5d5b8d;
   font-size: 12px;
 margin-top: 10px;
@@ -76,7 +76,4 @@ margin-top: 10px;
   font-size: 13px;
   cursor: pointer;
 }
-.signup{
-  color: rgb(0, 132, 255) !important;
-  cursor: pointer;
-}
+

@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/login',pathMatch:'full'},
-  {path:'login',component:LoginComponent},
-  {path:'signup',component:SignupComponent},
-  {path:'home',component:HomeComponent}
+  {path:'',redirectTo:'/landing',pathMatch: 'full'},
+  {path:'login', component:LoginComponent},
+  {path:'signup', component:SignupComponent},
+  {path:'home', component:HomeComponent},
+  {path:'landing', component:LandingComponent}
 ];
 
 @NgModule({
@@ -16,4 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[LoginComponent,SignupComponent,HomeComponent]
+export const routingComponents = [LoginComponent,SignupComponent,HomeComponent,LoginComponent]

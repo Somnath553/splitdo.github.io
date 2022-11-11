@@ -13,15 +13,16 @@ export class PaynowComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  close()
+  close(status:boolean)
   {
-    this.closePaynow.emit();
+    this.closePaynow.emit(status);
   }
   paid()
   {
     this.pay=!this.pay;
     setTimeout(() => {
-      this.close();
-    },3000)
-  }
+      this.close(true);}
+      ,3000)
+ }
+ 
 }

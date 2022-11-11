@@ -11,7 +11,7 @@
 
   <div class="middle-box">
       <h1>{{amount}}<span>₹</span></h1>
-      <p>Pay To xyz Company Ltd</p>
+      <p>Pay To Splitdo Company Ltd</p>
   </div>
   <div class="bottom-box">
   <button type="button" class= "payment-option-btn" (click)="paid()">Pay with GooglePay</button>
@@ -22,17 +22,17 @@
   <p>Pay using credit or debit card</p>
   <div class="card-num-field-group">
   <label>Card Number</label><br>
-  <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+  <input type="number" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
   </div>
 
   <div class="date-field-group">
   <label>Expiry Date</label><br>
-  <input type="text" class="date-field" placeholder="mm">
-  <input type="text" class="date-field" placeholder="yyyy">
+  <input type="number" class="date-field" placeholder="mm">
+  <input type="number" class="date-field" placeholder="yyyy">
   </div>
 
   <div class="cvc-field-group">
-  <label>CVC</label><br>
+  <label>CVV</label><br>
   <input type="password" class="cvc-field" placeholder="xxx">
   </div>
 
@@ -40,10 +40,13 @@
   <label>Card Holder Name</label><br>
   <input type="text" class="name-field" placeholder="Full Name">
   </div>
-
+<div class="d-flex pnow">
   <button type="button" class="pay-btn" (click)="paid()">Pay Now</button>
+</div>
 
   </div>
-  <button type="button" class="pay-btn2" (click)="close()">CLOSE</button> 
+  <div class="d-flex pnow pnow2">
+  <button type="button" class="pay-btn2 " (click)="close(false)">CANCEL</button> 
+  </div>
 
 </div>

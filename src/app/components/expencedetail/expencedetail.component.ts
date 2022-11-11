@@ -14,5 +14,5 @@ export class ExpencedetailComponent implements OnInit {
   }
   close(){
     this.closeExpenceDetail.emit();
-  }
+  }
 }
